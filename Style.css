@@ -1,0 +1,82 @@
+header img{
+    width: 100px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #121212;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+
+.navbar a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+.navbar a:hover{
+    color: #121212;
+}
+
+.slider{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4{
+    margin-top: 10%;
+}
+
+.slides{
+    display: flex;
+    width: 58rem;
+    overflow: hidden;
+}
+
+.slides img{
+    border-radius: 10px;
+}
+
+.slide{
+    width: 58rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1{
+    margin-left: -8rem;
+}
+
+.choose_1:checked ~ .slides > .s1{
+    margin-left: -58rem;
+}
