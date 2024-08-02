@@ -1,68 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salsabila  Website</title>
-</head>
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-<body>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="cv-salsabila.pdf">Download CV</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="about me.html">About me</a>
-    </nav>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <hr />
+  <body>
+    <!-- header design -->
+     <header class="header">
+      <a href="#" class="logo">Portfolio</a>
 
-    <header style="text-align: center;">
-        <img src="Image/profil.jpg" width="150" height="150"style="border-radius: 50%;"/>
-        <h1>Salsabila Husni</h1>
-    </header>
+      <i class='bx bx-menu' id="menu-icon"></i>
 
-    <hr />
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+     </header>
 
-    <article style="text-align: center;">
-        <h2>Overview</h2>
-        <p>
-            Hi, saya adalah siswi Smk Krian 1 yang berdomisisli di Sidoarjo.
-            Saat ini sedang belajar HTML di Petnai Kode
-        </p>
-    </article>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Salsabila</h1>
+        <h3>And I am a <span class="multiple-text"></span></h3>
+        <p>I am a student who attends Smk Krian 1 Sidoarjo, here I am majoring in RPL.</p>
+        <div class="social-media">
+          <a href="https://www.tiktok.com/@salsaalifaa"><i class='bx bxl-tiktok' ></i></box-icon></a>
+          <a href="https://www.instagram.com/salsaxblvy/"><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="https://salsabilahusnialifah.blogspot.com/"><i class='bx bxl-blogger' ></i></a>
+        </div>
+        <a href="cv-salsabila.pdf" class="btn">Download CV</a>
+      </div>
 
-    <div style="max-width: 600px; margin: 3em auto">
-        <table border="1" width="100%">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Pengalaman</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Membuat website</li>
-                            <li>Membuat desain produk</li>
-                            <li>Membuat kemasan produk sendiri</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+      <div class="home-img">
+        <img src="images/wa2.png" alt="">
+      </div>
+     </section>
 
-    <hr>
-    <footer style="text-align: center;">
-    </footer>
-</body>
+    <!-- about section design -->
+     <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/wa2.png" alt="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Salsabila Husni Alifah</h3>
+        <p>My name is salsabila, I really like to create and learn new things. I am a student of SMK Krian 1, I have achieved several achievements in class and school.</p>
+      </div>
+     </section>
+
+    <!-- experience section design -->
+     <section class="experience" id="experience">
+      <h2 class="heading">Our expertise<span> and experience</span></h2>
+
+      <div class="experience-container">
+        <div class="experience-box">
+          <i class='bx bxs-paint' ></i>
+          <h3>Graphic Design</h3>
+          <p>I was able to create, change, and add elements to graphic design using a specific application.</p>
+        </div>
+
+        <div class="experience-box">
+          <i class='bx bx-code-alt' ></i>
+          <h3>Web Creation</h3>
+          <p>I was able to create a website about myself using HTML, CSS, and JavaScript code.</p>
+        </div>
+
+        <div class="experience-box">
+          <i class='bx bx-bar-chart-alt' ></i>
+          <h3>Digital Marketing</h3>
+          <p>I am able to promote goods and services on social media using words that attract customers. </p>
+        </div>
+      </div>
+
+     </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="images/ppl.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>SDLC</h4>
+            <p>SDLC is short for Systems development life cycle or in Indonesian it is called the system development life cycle. SDLC is a cycle used in the creation or development of information systems that aim to solve problems effectively.</p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2023/07/sdlc-software-development-life-cycle.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/bd2.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Database</h4>
+            <p>A database is a collection of information or data that is managed regularly in a computer system.  </p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2023/07/pengantar-basis-data.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/ddl.jpeg" alt="">
+          <div class="portfolio-layer">
+            <h4>DDL</h4>
+            <p> DDL is a sublanguage of SQL used to define, modify and delete databases.</p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2023/09/ddl.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/algrtm1.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>Algorthm</h4>
+            <p>An algorithm is a step or method that has been carefully planned so that it is ordered.</p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2023/01/algoritma.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/12345.jpg" alt="">
+          <div class="portfolio-layer">
+            <h4>DML</h4>
+            <p>DML is a sublanguage of SQL that is used to manipulate data in databases that have been created, for example, for data retrieval, insertion, modification, and deletion.</p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2023/11/dmldata-manipulation-language.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="images/download.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Create a sales database</h4>
+            <p>A database is a systematic collection of data stored electronically. </p>
+            <a href="https://salsabilahusnialifah.blogspot.com/2024/07/membuat-database-penjualan.html"><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number">
+          <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+        <input type="submit" value="Send Massage" class="btn">
+      </form>
+     </section>
+
+    <!-- footer design -->
+     <footer class="footer">
+      <div class="footer text">
+        <p>Copyright &copy; 2024 by Codehal | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+      </div>
+     </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
